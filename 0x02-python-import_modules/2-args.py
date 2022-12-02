@@ -4,7 +4,7 @@ if __name__ == "__main__":
     lens = len(sys.argv) - 1
     sep = [':', '.']
     if lens == 0:
-        print('{} arguement{}'.format(lens, sep[1]))
+        print('{} arguements{}'.format(lens, sep[1]))
     else:
         if lens == 1:
             print('{} arguement{}'.format(lens, sep[0]))
