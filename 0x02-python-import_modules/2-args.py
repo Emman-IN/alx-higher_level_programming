@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+form sys import argv
 if __name__ == "__main__":
-    form sys import argv
-    lens = len(sys.argv) - 1
+    lens = len(argv) - 1
     sep = [':', '.']
     if lens == 0:
         print('{} arguements{}'.format(lens, sep[1]))
