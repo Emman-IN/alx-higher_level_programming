@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys
+    form sys import argv
     lens = len(sys.argv) - 1
     sep = [':', '.']
     if lens == 0:
