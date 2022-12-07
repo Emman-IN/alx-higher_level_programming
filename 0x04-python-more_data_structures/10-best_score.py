@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
     if a_dictionary:
-        valueSorted = dict(sorted(a_dictionary.items(),
-                           key=lambda x: x[1]), reverse=True)
-        first = list(valueSorted.keys())[0]
-        return str(first)
+        for k, v in a_dictionary.items():
+            if v == max(a_dictionary.values()):
+                return k
     return None
