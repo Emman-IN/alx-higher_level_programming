@@ -43,7 +43,9 @@ class Square():
         """sets the co-ordinates of the square
         Args:
             value: cordinates of the square"""
-        if (type(value) is not tuple and len(value) != 2 and not all(isinstance(num, int) for num in value) and not all(num >= 0 for num in value)):
+        if (type(value) is not tuple and len(value) != 2
+                and not all(isinstance(num, int) for num in value)
+                and not all(num >= 0 for num in value)):
             raise TypeError('position must be a tuple of 2 positive integers')
         else:
             self.__position = value
