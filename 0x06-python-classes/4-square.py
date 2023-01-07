@@ -8,7 +8,7 @@ class Square:
         """initialize the square with attributes
         Args:
             size (int): The square's size
-            """
+        """
               self.__size = size
 
     @property
@@ -20,7 +20,8 @@ class Square:
     def size(self, value):
         """sets the value of the size private attribute
         Args:
-            value (int): the value of the square"""
+            value (int): the value of the square
+         """
         if type(size) is not int:
             raise TypeError('size must be an integer')
         elif size < 0:
