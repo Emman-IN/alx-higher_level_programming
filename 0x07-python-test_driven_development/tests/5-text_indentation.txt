@@ -60,8 +60,12 @@ Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
 Traceback (most recent call last):
 TypeError: text must be a string
 
->>> text_indentation((3,"four"))
-Traceback (most recent call last):
-TypeError: text must be a string
+>>> text_indentation("Four"
+... "")
+Four
 
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
