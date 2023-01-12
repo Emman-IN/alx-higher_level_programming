@@ -9,10 +9,11 @@ def matrix_divided(matrix, div):
         div (int, float): divides numbers in matrix
     """
     if (type(matrix) is not list or
-            not all(isinstance(row, list) for row in matrix) or
-            not all(isinstance(ele, int) or isinstance(ele, float)
+        not all(isinstance(row, list) for row in matrix) or
+        not all(isinstance(ele, int) or isinstance(ele, float)
                 for ele in [num for rows in matrix for num in rows])):
-                raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+        raise TypeError("matrix must be a matrix (list of lists)"
+                        "of integers/floats")
     for i in range(len(matrix)):
         if len(matrix[0]) != len(matrix[i]):
             raise TypeError('Each row of the matrix must have the same size')
