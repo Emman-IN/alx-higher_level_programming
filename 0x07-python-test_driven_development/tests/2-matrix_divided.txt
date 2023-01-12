@@ -64,11 +64,14 @@ Import the function
 		Traceback (most recent call last):
 			TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+			>>> matrix_divided([[3, "9"], [15, 3]], 3)
+			Traceback (most recent call last):
+				TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-			>>> matrix3 = [
-				... [1.1, 1.2],
-				... [2.1]
-				... ]
+				>>> matrix3 = [
+					... [1.1, 1.2],
+					... [2.1]
+					... ]
 
 >>> matrix_divided([[8, 9], [7]], 8)
 	Traceback (most recent call last):
