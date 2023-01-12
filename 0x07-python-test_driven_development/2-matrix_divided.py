@@ -8,9 +8,9 @@ def matrix_divided(matrix, div):
         matrix (list): list of lists
         div (int, float): divides numbers in matrix
     """
-    if (type(matrix) is not list
-            or not all(isinstance(row, list) for row in matrix)
-            or not all(isinstance(ele, int) or isinstance(ele, float)
+    if (type(matrix) is not list or
+            not all(isinstance(row, list) for row in matrix) or
+            not all(isinstance(ele, int) or isinstance(ele, float)
                 for ele in [num for rows in matrix for num in rows])):
                 raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
     for i in range(len(matrix)):
